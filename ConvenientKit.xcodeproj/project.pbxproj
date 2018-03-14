@@ -15,6 +15,14 @@
 		41501E1B205912C7002C2984 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E16205912C7002C2984 /* ReusableView.swift */; };
 		41501E1C205912C7002C2984 /* ConvenientCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E17205912C7002C2984 /* ConvenientCollectionView.swift */; };
 		41501E1D205912C7002C2984 /* ConvenientTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E18205912C7002C2984 /* ConvenientTableView.swift */; };
+		41501E2320591D77002C2984 /* UIView+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E2220591D77002C2984 /* UIView+IBInspectable.swift */; };
+		41501E2520591DDE002C2984 /* UIButton+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E2420591DDE002C2984 /* UIButton+IBInspectable.swift */; };
+		41501E2720591F1B002C2984 /* UITextField+IBInspectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E2620591F1B002C2984 /* UITextField+IBInspectable.swift */; };
+		41501E2920591F86002C2984 /* StringSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E2820591F86002C2984 /* StringSize.swift */; };
+		41501E2B205921B2002C2984 /* UIColor+Extenstions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E2A205921B2002C2984 /* UIColor+Extenstions.swift */; };
+		41501E2E20592238002C2984 /* UIViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E2D20592238002C2984 /* UIViewController+Keyboard.swift */; };
+		41501E302059229C002C2984 /* UIWindow+RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E2F2059229C002C2984 /* UIWindow+RootVC.swift */; };
+		41501E32205925A7002C2984 /* Screen+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E31205925A7002C2984 /* Screen+Size.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +47,14 @@
 		41501E16205912C7002C2984 /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		41501E17205912C7002C2984 /* ConvenientCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvenientCollectionView.swift; sourceTree = "<group>"; };
 		41501E18205912C7002C2984 /* ConvenientTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvenientTableView.swift; sourceTree = "<group>"; };
+		41501E2220591D77002C2984 /* UIView+IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+IBInspectable.swift"; sourceTree = "<group>"; };
+		41501E2420591DDE002C2984 /* UIButton+IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+IBInspectable.swift"; sourceTree = "<group>"; };
+		41501E2620591F1B002C2984 /* UITextField+IBInspectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+IBInspectable.swift"; sourceTree = "<group>"; };
+		41501E2820591F86002C2984 /* StringSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringSize.swift; sourceTree = "<group>"; };
+		41501E2A205921B2002C2984 /* UIColor+Extenstions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extenstions.swift"; sourceTree = "<group>"; };
+		41501E2D20592238002C2984 /* UIViewController+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Keyboard.swift"; sourceTree = "<group>"; };
+		41501E2F2059229C002C2984 /* UIWindow+RootVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+RootVC.swift"; sourceTree = "<group>"; };
+		41501E31205925A7002C2984 /* Screen+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Screen+Size.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +99,9 @@
 			children = (
 				41501E1E205912D7002C2984 /* System */,
 				41501E20205912FB002C2984 /* Reusable Views */,
-				41501E1F205912F2002C2984 /* Util */,
+				41501E2120591D53002C2984 /* IBInspectables */,
+				41501E1F205912F2002C2984 /* Foundation Extensions */,
+				41501E2C2059220B002C2984 /* UIViewController Extensions */,
 			);
 			path = ConvenientKit;
 			sourceTree = "<group>";
@@ -106,12 +124,15 @@
 			name = System;
 			sourceTree = "<group>";
 		};
-		41501E1F205912F2002C2984 /* Util */ = {
+		41501E1F205912F2002C2984 /* Foundation Extensions */ = {
 			isa = PBXGroup;
 			children = (
 				41501E15205912C7002C2984 /* ClassName.swift */,
+				41501E2820591F86002C2984 /* StringSize.swift */,
+				41501E2A205921B2002C2984 /* UIColor+Extenstions.swift */,
+				41501E31205925A7002C2984 /* Screen+Size.swift */,
 			);
-			name = Util;
+			name = "Foundation Extensions";
 			sourceTree = "<group>";
 		};
 		41501E20205912FB002C2984 /* Reusable Views */ = {
@@ -123,6 +144,25 @@
 				41501E14205912C7002C2984 /* ViewFromNib.swift */,
 			);
 			name = "Reusable Views";
+			sourceTree = "<group>";
+		};
+		41501E2120591D53002C2984 /* IBInspectables */ = {
+			isa = PBXGroup;
+			children = (
+				41501E2220591D77002C2984 /* UIView+IBInspectable.swift */,
+				41501E2420591DDE002C2984 /* UIButton+IBInspectable.swift */,
+				41501E2620591F1B002C2984 /* UITextField+IBInspectable.swift */,
+			);
+			name = IBInspectables;
+			sourceTree = "<group>";
+		};
+		41501E2C2059220B002C2984 /* UIViewController Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				41501E2D20592238002C2984 /* UIViewController+Keyboard.swift */,
+				41501E2F2059229C002C2984 /* UIWindow+RootVC.swift */,
+			);
+			name = "UIViewController Extensions";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,8 +276,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41501E2B205921B2002C2984 /* UIColor+Extenstions.swift in Sources */,
+				41501E2320591D77002C2984 /* UIView+IBInspectable.swift in Sources */,
+				41501E302059229C002C2984 /* UIWindow+RootVC.swift in Sources */,
+				41501E2E20592238002C2984 /* UIViewController+Keyboard.swift in Sources */,
+				41501E2720591F1B002C2984 /* UITextField+IBInspectable.swift in Sources */,
+				41501E2520591DDE002C2984 /* UIButton+IBInspectable.swift in Sources */,
 				41501E1B205912C7002C2984 /* ReusableView.swift in Sources */,
 				41501E1C205912C7002C2984 /* ConvenientCollectionView.swift in Sources */,
+				41501E32205925A7002C2984 /* Screen+Size.swift in Sources */,
+				41501E2920591F86002C2984 /* StringSize.swift in Sources */,
 				41501E19205912C7002C2984 /* ViewFromNib.swift in Sources */,
 				41501E1D205912C7002C2984 /* ConvenientTableView.swift in Sources */,
 				41501E1A205912C7002C2984 /* ClassName.swift in Sources */,
