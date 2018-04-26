@@ -71,4 +71,13 @@ public extension UIView {
             layer.shadowOffset = newValue
         }
     }
+    
+    @IBInspectable public var rotationAngle: CGFloat {
+        get {
+            return atan2(CGFloat(transform.b), CGFloat(transform.a)) / .pi * 180.0
+        }
+        set {
+            transform = transform.rotated(by: (newValue) / 180.0 * .pi)
+        }
+    }
 }

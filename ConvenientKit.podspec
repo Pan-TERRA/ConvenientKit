@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   # ―――  Spec Metadata  ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
 
   s.name         = "ConvenientKit"
-  s.version      = "0.1.1"
+  s.version      = "0.1.2"
   s.summary      = "A small library of good solutions."
   s.description  = "This library contains many classes and extensions that are designed to reduce the amount of code that is copied from the one project to another."
   s.homepage     = "https://github.com/Pan-TERRA/ConvenientKit"

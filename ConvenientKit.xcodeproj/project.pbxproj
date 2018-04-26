@@ -23,6 +23,14 @@
 		41501E2E20592238002C2984 /* UIViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E2D20592238002C2984 /* UIViewController+Keyboard.swift */; };
 		41501E302059229C002C2984 /* UIWindow+RootVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E2F2059229C002C2984 /* UIWindow+RootVC.swift */; };
 		41501E32205925A7002C2984 /* Screen+Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41501E31205925A7002C2984 /* Screen+Size.swift */; };
+		415BC3862091E11900F609AB /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415BC3852091E11900F609AB /* UIView+Constraints.swift */; };
+		415BC3882091E14E00F609AB /* UIButton+IgnoringState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415BC3872091E14E00F609AB /* UIButton+IgnoringState.swift */; };
+		415BC38C2091E1AF00F609AB /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415BC38B2091E1AF00F609AB /* Date.swift */; };
+		415BC38E2091E29D00F609AB /* SwiftyJSON+Convertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415BC38D2091E29D00F609AB /* SwiftyJSON+Convertible.swift */; };
+		415BC3902091E3E900F609AB /* Collection+Safe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415BC38F2091E3E900F609AB /* Collection+Safe.swift */; };
+		415BC3922091E43700F609AB /* UIImage+Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415BC3912091E43700F609AB /* UIImage+Orientation.swift */; };
+		415BC3942091E53000F609AB /* UIView+Autolayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415BC3932091E53000F609AB /* UIView+Autolayout.swift */; };
+		41BA5DAE2091DFF700FC2B5D /* UIGestureRecognizer+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41BA5DAD2091DFF700FC2B5D /* UIGestureRecognizer+UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +63,14 @@
 		41501E2D20592238002C2984 /* UIViewController+Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Keyboard.swift"; sourceTree = "<group>"; };
 		41501E2F2059229C002C2984 /* UIWindow+RootVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+RootVC.swift"; sourceTree = "<group>"; };
 		41501E31205925A7002C2984 /* Screen+Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Screen+Size.swift"; sourceTree = "<group>"; };
+		415BC3852091E11900F609AB /* UIView+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		415BC3872091E14E00F609AB /* UIButton+IgnoringState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+IgnoringState.swift"; sourceTree = "<group>"; };
+		415BC38B2091E1AF00F609AB /* Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
+		415BC38D2091E29D00F609AB /* SwiftyJSON+Convertible.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftyJSON+Convertible.swift"; sourceTree = "<group>"; };
+		415BC38F2091E3E900F609AB /* Collection+Safe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Collection+Safe.swift"; sourceTree = "<group>"; };
+		415BC3912091E43700F609AB /* UIImage+Orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Orientation.swift"; sourceTree = "<group>"; };
+		415BC3932091E53000F609AB /* UIView+Autolayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Autolayout.swift"; sourceTree = "<group>"; };
+		41BA5DAD2091DFF700FC2B5D /* UIGestureRecognizer+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIGestureRecognizer+UIView.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +113,8 @@
 		412C3E9B20591254002B01B4 /* ConvenientKit */ = {
 			isa = PBXGroup;
 			children = (
+				41BA5DAF2091E0D400FC2B5D /* UIKit+Convenience */,
+				41AD9FBD2091DFAE00E1557F /* Gestures */,
 				41501E1E205912D7002C2984 /* System */,
 				41501E20205912FB002C2984 /* Reusable Views */,
 				41501E2120591D53002C2984 /* IBInspectables */,
@@ -131,6 +149,9 @@
 				41501E2820591F86002C2984 /* StringSize.swift */,
 				41501E2A205921B2002C2984 /* UIColor+Extenstions.swift */,
 				41501E31205925A7002C2984 /* Screen+Size.swift */,
+				415BC38B2091E1AF00F609AB /* Date.swift */,
+				415BC38D2091E29D00F609AB /* SwiftyJSON+Convertible.swift */,
+				415BC38F2091E3E900F609AB /* Collection+Safe.swift */,
 			);
 			name = "Foundation Extensions";
 			sourceTree = "<group>";
@@ -163,6 +184,25 @@
 				41501E2F2059229C002C2984 /* UIWindow+RootVC.swift */,
 			);
 			name = "UIViewController Extensions";
+			sourceTree = "<group>";
+		};
+		41AD9FBD2091DFAE00E1557F /* Gestures */ = {
+			isa = PBXGroup;
+			children = (
+				41BA5DAD2091DFF700FC2B5D /* UIGestureRecognizer+UIView.swift */,
+			);
+			name = Gestures;
+			sourceTree = "<group>";
+		};
+		41BA5DAF2091E0D400FC2B5D /* UIKit+Convenience */ = {
+			isa = PBXGroup;
+			children = (
+				415BC3852091E11900F609AB /* UIView+Constraints.swift */,
+				415BC3932091E53000F609AB /* UIView+Autolayout.swift */,
+				415BC3872091E14E00F609AB /* UIButton+IgnoringState.swift */,
+				415BC3912091E43700F609AB /* UIImage+Orientation.swift */,
+			);
+			name = "UIKit+Convenience";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,17 +317,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				41501E2B205921B2002C2984 /* UIColor+Extenstions.swift in Sources */,
+				415BC3942091E53000F609AB /* UIView+Autolayout.swift in Sources */,
 				41501E2320591D77002C2984 /* UIView+IBInspectable.swift in Sources */,
 				41501E302059229C002C2984 /* UIWindow+RootVC.swift in Sources */,
+				415BC38E2091E29D00F609AB /* SwiftyJSON+Convertible.swift in Sources */,
 				41501E2E20592238002C2984 /* UIViewController+Keyboard.swift in Sources */,
 				41501E2720591F1B002C2984 /* UITextField+IBInspectable.swift in Sources */,
 				41501E2520591DDE002C2984 /* UIButton+IBInspectable.swift in Sources */,
+				415BC38C2091E1AF00F609AB /* Date.swift in Sources */,
 				41501E1B205912C7002C2984 /* ReusableView.swift in Sources */,
 				41501E1C205912C7002C2984 /* ConvenientCollectionView.swift in Sources */,
 				41501E32205925A7002C2984 /* Screen+Size.swift in Sources */,
+				415BC3902091E3E900F609AB /* Collection+Safe.swift in Sources */,
+				415BC3922091E43700F609AB /* UIImage+Orientation.swift in Sources */,
 				41501E2920591F86002C2984 /* StringSize.swift in Sources */,
+				415BC3882091E14E00F609AB /* UIButton+IgnoringState.swift in Sources */,
 				41501E19205912C7002C2984 /* ViewFromNib.swift in Sources */,
 				41501E1D205912C7002C2984 /* ConvenientTableView.swift in Sources */,
+				415BC3862091E11900F609AB /* UIView+Constraints.swift in Sources */,
+				41BA5DAE2091DFF700FC2B5D /* UIGestureRecognizer+UIView.swift in Sources */,
 				41501E1A205912C7002C2984 /* ClassName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
