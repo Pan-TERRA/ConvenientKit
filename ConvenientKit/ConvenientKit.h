@@ -20,5 +20,11 @@ FOUNDATION_EXPORT const unsigned char ConvenientKitVersionString[];
  Step-by-step instruction for updating the library:
  
  1. Make changes
- 2. 
+ 2. Increase pod version in *.podspec
+ 3. Commit & Push
+ 4. Create and Push tag with new pod version
+ 5. pod lib lint
+ 6. pod trunk push ConvenientKit.podspec
+ 7. Congrats
+ 
  */
